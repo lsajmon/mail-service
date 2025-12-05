@@ -1,0 +1,31 @@
+server:
+  port: 8084
+
+spring:
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: java.mail.testowy@gmail.com
+    password: tnra dcfy bopx xpbj
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+          ssl:
+            trust: smtp.gmail.com
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+
+rabbit:
+  confirmation-data-queue: data_queue
+
+executor:
+  max: 2
+  core: 2
+  queue: 250
+  name: Task-Executor
